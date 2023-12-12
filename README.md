@@ -2,13 +2,12 @@
 ## Introduction
 Hyperbolic neural networks (HNNs) have shown promise in modeling data with non-Euclidean structures. However, their performance has often been compromised due to instability and a lack of robustness. In this work, we propose a novel approach to enhancing the stability of HNNs by conducting rigorous Lipschitz analysis. Our analysis covers both the Poincaré ball and the hyperboloid models, providing Lipschitz bounds for HNN layers. Importantly, this analysis yields valuable insights into features with unit norms and large norms within HNNs. Further, we introduce regularization methods based on the derived Lipschitz bounds and demonstrate consistent improvements in HNN stability against noisy perturbations. This part is the code where we perform Lipschitz regularized training for HNN using the Poincaré ball  ball model.
 ## Environment
-numpy==1.16.2
-
-numpy=1.16.2
-scikit-learn==0.20.3
+The code is tested on Python 3.9, PyTorch 1.12.1, and CUDA 11.3.
+* numpy==1.15.1
+* scikit-learn==0.19.2
 torch==1.1.0
 torchvision==0.2.2
-networkx==2.2
+networkx==2.1
 ## Training
 **texas** 
 python train.py --task nc --dataset texas --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold PoincareBall --log-freq 1
