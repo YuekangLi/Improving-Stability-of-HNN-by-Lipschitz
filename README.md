@@ -23,11 +23,13 @@ Here we provide the scripts for different datasets.
 ```python train.py --task nc --dataset chameleon --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0.001 --manifold PoincareBall --log-freq 1```
 
 * Actor (nodes represent actors and two nodes are connected if they co-occur on the same Wikipedia page)
-* 
+  
 ```python train.py --task nc --dataset film --model HNN --dim 16 --lr 0.005 --num-layers 2 --act relu --bias 1 --dropout 0 --weight-decay 1e-4 --manifold PoincareBall --log-freq 1```
 
 * Cora (nodes represent publications and edges represent citations)
+  
 ```python train.py --task nc --dataset cora --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.2 --weight-decay 0.001 --manifold PoincareBall --log-freq 1```
 
 * Pubmed (nodes represent publications and edges represent citations)
+  
 ```python train.py --task nc --dataset pubmed --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold PoincareBall --log-freq 1```
