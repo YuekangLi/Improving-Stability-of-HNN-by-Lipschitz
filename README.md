@@ -9,17 +9,13 @@ torch==1.1.0
 torchvision==0.2.2
 networkx==2.2
 ## Training
-**hnn_nc_cornell_poincare** 
+**cornell*
 
-python [train.py](http://train.py/) --task nc --dataset cornell --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold PoincareBall --log-freq 5 --cuda 0 >log_result.file 2>&1
-
-**hnn_nc_cornell_hyperboloid**
-
-python [train.py](http://train.py/) --task nc --dataset cornell --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold Hyperboloid --log-freq 5 --cuda 2 >log_result.file 2>&1
+python train.py --task nc --dataset cornell --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold PoincareBall --log-freq 1
 
 **hnn_nc_texas_poincare** 
 
-python [train.py](http://train.py/) --task nc --dataset texas --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold PoincareBall --log-freq 5 --cuda 0 >log_result.file 2>&1
+python train.py](http://train.py/) --task nc --dataset texas --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold PoincareBall --log-freq 5 --cuda 0 >log_result.file 2>&1
 
 **hnn_nc_texas_hyperboloid**
 
