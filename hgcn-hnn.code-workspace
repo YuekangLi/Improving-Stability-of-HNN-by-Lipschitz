@@ -1,9 +1,0 @@
-{
-	"folders": [
-		{
-			"uri": "vscode-remote://ssh-remote+10.200.14.165/data/yuekang/hgcn-hnn"
-		}
-	],
-	"remoteAuthority": "ssh-remote+10.200.14.165",
-	"settings": {}
-}
