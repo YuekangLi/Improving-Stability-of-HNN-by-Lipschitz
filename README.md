@@ -9,8 +9,8 @@ The code is tested on Python 3.7.
 * torchvision==0.2.2
 * networkx==2.1
 ## Training
-**texas** 
-``` python train.py --task nc --dataset texas --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold PoincareBall --log-freq 1 ```
+* texas
+```python train.py --task nc --dataset texas --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold PoincareBall --log-freq 1 ```
 
 **wisconsin** 
 python train.py --task nc --dataset wisconsin --model HNN --lr 0.01 --dim 16 --num-layers 2 --act None --bias 1 --dropout 0.5 --weight-decay 0 --manifold PoincareBall --log-freq 1
